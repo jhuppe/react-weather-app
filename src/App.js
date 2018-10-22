@@ -4,6 +4,7 @@ import Form from './Components/Form.js';
 import Weather from './Components/Weather.js';
 import './App.css';
 
+//Api removed from source control
 const apiKey = '';
 
 class App extends React.Component {
@@ -33,7 +34,8 @@ class App extends React.Component {
         city: response.name,
         country: response.sys.country,
         humidity: response.main.humidity,
-        description: response.weather[0].description,
+        wind: Math.floor(response.wind.speed),
+        description: response.weather[0].description.charAt(0).toUpperCase() + response.weather[0].description.slice(1),
         error: ""
       })
     } else {
@@ -48,11 +50,10 @@ class App extends React.Component {
  <div className="wrapper">
   <div className="main">
    <div className="container">
-    <div className="row">
-      <div className="col-xs-5 title-container">
+      <div className="title-container">
         <Titles />
       </div>
-      <div className="col-xs-7 form-container">
+      <div className="form-container">
         <Form loadWeather={this.getWeather} />
         <Weather
           temperature={this.state.temperature}
@@ -60,11 +61,11 @@ class App extends React.Component {
           country={this.state.country}
           humidity={this.state.humidity}
           description={this.state.description}
+          wind={this.state.wind}
           error={this.state.error}
         />
       </div>
      </div>
-    </div>
    </div>
   </div>
 </div>

@@ -7,7 +7,7 @@ body {
 }
 
 .wrapper {
-  background: linear-gradient(to right, #70bef4, #066ab0);
+  background: #70bef4;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -15,22 +15,30 @@ body {
 }
 
 .main {
-  height: 90vh;
+  height: 90%;
   background: #fff;
   box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .title-container {
   height: 90vh;
-  background: url("img/bg.jpg") center center no-repeat;
+  background: url("img/background.jpg") center center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: rgb(11, 3, 82);
+  color: rgb(16, 49, 121);
 }
 
 .title-container__title {
@@ -51,7 +59,6 @@ body {
 
 .form-container {
   background-color: #0a2333; 
-  height: 90vh;
   padding-top: 100px;
   padding-left: 50px;
 }
