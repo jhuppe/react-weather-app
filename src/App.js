@@ -4,8 +4,8 @@ import Form from './Components/Form.js';
 import Weather from './Components/Weather.js';
 import './App.css';
 
-//Api removed from source control
-const apiKey = '';
+
+var apiKey = '262f2c2ddaf3d8534a69e2fbb97d9402';
 
 class App extends React.Component {
 
