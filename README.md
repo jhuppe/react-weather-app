@@ -1,6 +1,17 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# [Live](https://jhuppe-react-weather-search.herokuapp.com/)
 
-This app gives you the ability to view the current temperature, humidity, wind speed, and weather description for the location chosen by the user. If you would like to test out the app, clone the project and obtain an API key from http://openweathermap.org
+
+# Tech Stack
+- [React](https://reactjs.org/docs/getting-started.html)
+- [Open Weather API](https://openweathermap.org/)
+
+# Local set up
+###### Ensure that all of the above technologies are available on your local machine
+1. Run `git clone https://github.com/jhuppe/react-weather-app && cd react-weather-app && npm install`
+2. Start the app by `npm start`
+###### Ready! Go to: [http://localhost:3000](http://localhost:3000)
+
+This app gives you the ability to view the current temperature, humidity, wind speed, and weather description for the location chosen by the user. 
 
 Initial Screen
 ![2018-10-22_08h57_51](https://user-images.githubusercontent.com/14873941/47370887-e8e2ef80-d6a3-11e8-8f5e-a5afc4bb8d00.png)
